@@ -1,3 +1,3 @@
-const a = (b) => [...b].findIndex((value) => value === "e");
+const a = (b) => b.indexOf("e");
 const b = a("abcdefd");
 console.log(b);
