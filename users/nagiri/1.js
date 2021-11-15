@@ -1,6 +1,5 @@
 function input (pram){
-    const a = [...pram];
-    return a;
+    return [...pram];
 }
 const output = input("abc")
 console.log(output)
