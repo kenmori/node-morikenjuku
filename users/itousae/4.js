@@ -1,6 +1,5 @@
 function output(array) {
-  const result = array.filter((el) => el % 2 !== 0);
-  console.log(result);
+  return array.filter((el) => el % 2 !== 0);
 }
 
 const input = [1, 2, 3, 4, 5, 6, 7];
