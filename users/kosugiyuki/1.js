@@ -1,3 +1,6 @@
-const input = 'abc';
-const output = [...input];
-console.log(output);
+function input(param) {
+    return [...param];
+  }
+  const output = input('abc');
+  console.log(output);
+  
