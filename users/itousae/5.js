@@ -1,5 +1,8 @@
-const input = ["a", "b", "c"];
-function output(array) {
-  return Object.fromEntries(Object.entries(array));
+const input = ['a', 'b', 'c'];
+function f(array) {
+  const result = Object.fromEntries(Object.entries(array));
+  return result;
 }
-console.log(output(input));
+const output = f(input);
+console.log(output);
+
