@@ -1,13 +1,15 @@
 const a = (b) =>
-  b.reduce((target, key, index) => {
-    target.ids = [...([target.ids] + key.id)];
-    console.log(target.ids[index]);
-    target.entities = {
-      ...target.entities,
-      [key.id]: { value: key.value },
-    };
-    return target;
-  }, {});
+  b.reduce(
+    (target, key, index) => {
+      target.ids[index] = key.id;
+      target.entities = {
+        ...target.entities,
+        [key.id]: { value: key.value },
+      };
+      return target;
+    },
+    { ids: [] }
+  );
 
 const b = a([
   { id: "a", value: 1 },
