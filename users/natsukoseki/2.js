@@ -3,5 +3,5 @@ function f(input) {
 }
 
 const array = ['a', 'b', 'c'];
-const output = input(array);
+const output = f(array);
 console.log(output);
