@@ -1,4 +1,10 @@
-function f(input) {}
+// input:["a", "b", "c"]
+// output:{0: "a", 1, "b", 2: "c"}
 
-const output = f(input);
+function f(input) {
+	return { ...input };
+}
+
+const array = ['a', 'b', 'c'];
+const output = f(array);
 console.log(output);
