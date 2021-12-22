@@ -3,16 +3,6 @@
 
 {
 	function f(input) {
-		return { ...input };
-	}
-
-	const array = ['a', 'b', 'c'];
-	const output = f(array);
-	console.log(output);
-}
-
-{
-	function f(input) {
 		return Object.assign({}, input);
 	}
 
