@@ -3,9 +3,7 @@
 
 function f(input) {
 	const returnObject = input.reduce((acc,cur,index) =>{
-		console.log(acc,cur,index);
 		acc[cur] = index;
-		console.log(acc,cur,index);
 		return acc;
 	},{})
 	return returnObject;
