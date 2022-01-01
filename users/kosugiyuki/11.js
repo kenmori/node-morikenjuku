@@ -18,7 +18,7 @@ const f = (param) => {
   return param.reduce(
     (obj, current, index) => {
       obj.sum = obj.sum + current;
-      obj.ids[index] = { ['value']: current };
+      obj.ids[current] = { ['value']: current };
       return obj;
     },
     { sum: 0, ids: {} }
