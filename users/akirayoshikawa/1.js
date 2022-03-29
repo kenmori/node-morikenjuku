@@ -2,5 +2,5 @@
 // output: "a", "b", "c"
 
 const a = input => [...input];
-const input = a("abc");
-console.log(input);
+const b = a("abc");
+console.log(b);
