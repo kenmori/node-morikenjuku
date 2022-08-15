@@ -24,8 +24,7 @@ const f = (input) => {
     const medianIndex = Math.round(arrey.length / 2) - 1;
     result.push(arrey[medianIndex]);
     const slicedArrey = [...arrey.slice(0, medianIndex)];
-    if (slicedArrey.length === 0) return;
-    getMedian(slicedArrey);
+    slicedArrey.length && getMedian(slicedArrey);
     return result;
   };
   return getMedian(input);
@@ -35,6 +34,4 @@ const result01 = f([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]);
 const result02 = f([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]);
 const result03 = f([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]);
 
-console.log(result01);
-console.log(result02);
-console.log(result03);
+console.log(result01, result02, result03);
